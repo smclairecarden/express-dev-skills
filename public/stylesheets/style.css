@@ -3,6 +3,44 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+#list {
+  text-align: center;
+  display: block;
+}
+
+#add {
+  text-align: center;
+  display: block;
+}
+
 a {
   color: #00B7FF;
+}
+
+#go-back {
+  text-align: center;
+  display: block;
+}
+
+#new-skill {
+  text-align: center;
+  margin: auto;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+  font: "Lucida Grande", Helvetica, Arial, sans-serif
+}
+
+ul {
+  list-style: none;
+}
+
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.delete-form button {
+  color: red;
 }
