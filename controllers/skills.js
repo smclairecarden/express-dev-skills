@@ -36,10 +36,22 @@ function deleteSkill(req, res) {
   })
 }
 
+function edit(req, res) {
+  skillDb.findById(req.params.id, function(error, skills){
+    res.render('skills/edit', {
+      skills: skills,
+      error: error
+    })
+  })
+}
+
+//The edit function does not work but I wanted to leave it in hope that one day I will have it working.
+
 export {
   index,
   show,
   newSkill as new,
   create,
   deleteSkill as delete,
+  edit,
 }

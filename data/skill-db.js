@@ -50,9 +50,15 @@ function findByIdAndDelete(id, callback) {
   }
 }
 
+function findByIdAndEdit(id, callback) {
+  skills.push(skill)
+  return callback(null, skill)
+}
+
 export {
   find,
   findById,
   create,
   findByIdAndDelete,
+  findByIdAndEdit,
 }
